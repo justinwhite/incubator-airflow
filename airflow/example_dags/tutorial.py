@@ -62,6 +62,6 @@ dag = DAG(
 
 # t1, t2 and t3 are examples of tasks created by instantiating operators
 t1 = BashOperator(
-    task_id='print_date',
+    task_id='curl_GCE',
     bash_command='curl GCE_INTERNAL_IP:GCE_INTERNAL_PORT',
     dag=dag)
